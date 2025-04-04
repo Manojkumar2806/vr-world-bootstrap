@@ -5,6 +5,19 @@ Welcome to **VR World**, where innovation meets imagination. This responsive web
 ## 📸 Live Demo
 🔗 [Click here to experience VR World live](https://manojvrweb.ccbp.tech)  
 
+## 📸 UI Screenshots
+
+### ✅ Navbar  
+![Navbar Screenshot](https://github.com/user-attachments/assets/27cf0b3d-588a-4f43-9fef-a837640aeebc)
+
+### 🎯 Hero Section  
+![Hero Screenshot 1](https://github.com/user-attachments/assets/db8ee914-f671-4314-833f-01b2bee3134b)  
+![Hero Screenshot 2](https://github.com/user-attachments/assets/de6980be-2706-4035-a0af-f7ba967f76bb)
+![Hero Screenshot 2](https://github.com/user-attachments/assets/80719d45-9fd3-4aeb-afee-b2dedd7cac0e)
+
+
+### 📥 Footer  
+![Footer Screenshot](https://github.com/user-attachments/assets/c40581a4-7bc1-47f0-b439-36c105ee22bc)
 
 ---
 
@@ -14,6 +27,7 @@ Welcome to **VR World**, where innovation meets imagination. This responsive web
 - 🎯 Bold hero section with CTA
 - 🧭 Sticky navigation & scroll-aware layout
 - 🧼 Minimalist footer with social icons
+- Responsiveness on all devices
 
 ---
 
