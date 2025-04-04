@@ -1,0 +1,583 @@
+:root {
+    --primary-color: #1754a1;
+    --secondary-color: #1a2137;
+    --text-dark: #1f2933;
+    --text-medium: #323f4b;
+    --text-light: #5a7184;
+    --accent-color: #3d85c6;
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+  }
+  
+  .logo {
+    height: 45px;
+    width: 65px;
+    transition: transform var(--transition-speed);
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    transition: color var(--transition-speed);
+  }
+  
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all var(--transition-speed);
+  }
+  
+  .nav-link:hover:after {
+    width: 80%;
+    left: 10%;
+  }
+  
+  .nav-link.active:after {
+    width: 80%;
+    left: 10%;
+  }
+  
+  .vr-bg-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all var(--transition-speed);
+  }
+  
+  .vr-heading {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+  }
+  
+  .banner-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: var(--primary-color);
+    border: none;
+    transition: all var(--transition-speed);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .banner-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--accent-color);
+  }
+  
+  .feature-section {
+    padding: 5rem 0;
+  }
+  
+  .feature-heading {
+    font-family: "Roboto", sans-serif;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .feature-heading:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+  }
+  
+  .feature-card {
+    transition: transform var(--transition-speed);
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    height: 100%;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .images {
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+  }
+  
+  .feature-card:hover .images {
+    transform: scale(1.1);
+  }
+  
+  .heading {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .para {
+    color: var(--text-medium);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .heading2 {
+    color: var(--text-dark);
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .products-heading {
+    color: var(--text-dark);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .products-heading:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+  }
+  
+  .vr-products-container, .vr-products-container2 {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all var(--transition-speed);
+  }
+  
+  .vr-products-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), 
+                      url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-img.png");
+  }
+  
+  .vr-products-container2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), 
+                      url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-products-headset-with-controllers-img.png");
+  }
+  
+  .vr-products-container:hover, .vr-products-container2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  }
+  
+  .buttons123, .button2234 {
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all var(--transition-speed);
+  }
+  
+  .buttons123 {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+  
+  .buttons123:hover {
+    background-color: white;
+    color: var(--secondary-color);
+  }
+  
+  .button2234 {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+  }
+  
+  .button2234:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+  }
+  
+  .vr-website-cointainer {
+    background-color: #f9fbfe;
+    border-radius: 10px;
+    padding: 4rem 0;
+  }
+  
+  .image123 {
+    width: 250px;
+    height: 330px;
+    transition: transform var(--transition-speed);
+    margin-bottom: 1rem;
+  }
+  
+  .image123:hover {
+    transform: translateY(-10px);
+  }
+  
+  .vr-image {
+    color: var(--text-medium);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  
+  .otical-container {
+    color: var(--text-light);
+    padding: 4rem 0;
+  }
+  
+  .optical-image {
+    height: 100%;
+    width: 100%;
+    transition: transform var(--transition-speed);
+  }
+  
+  .optical-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .optical-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .font-size {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .optiocal-button {
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all var(--transition-speed);
+  }
+  
+  .optiocal-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .trending-heading {
+    color: var(--text-dark);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .trending-heading:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 1rem auto;
+  }
+  
+  .blog-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all var(--transition-speed);
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trending-image {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s;
+    object-fit: cover;
+  }
+  
+  .blog-card:hover .trending-image {
+    transform: scale(1.05);
+  }
+  
+  .Amazon {
+    color: #959ead;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .trending-description {
+    color: var(--text-medium);
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more-button {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all var(--transition-speed);
+    cursor: pointer;
+  }
+  
+  .read-more-button svg {
+    margin-left: 5px;
+    transition: transform var(--transition-speed);
+  }
+  
+  .read-more-button:hover {
+    color: var(--accent-color);
+  }
+  
+  .read-more-button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .bg-containers2 {
+    background-color: #222b36;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-containers2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(23, 84, 161, 0.7), rgba(26, 33, 55, 0.7));
+    z-index: 1;
+  }
+  
+  .bg-containers2 .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .image12 {
+    height: 100%;
+    width: 90%;
+    transition: transform var(--transition-speed);
+  }
+  
+  .image12:hover {
+    transform: scale(1.05);
+  }
+  
+  .vr-button {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    transition: all var(--transition-speed);
+  }
+  
+  .vr-button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bg-container-footer {
+    background-color: #19232d;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    color: var(--text-light);
+  }
+  
+  .image-footer {
+    height: 50px;
+    width: 70px;
+    margin-bottom: 1.5rem;
+    transition: transform var(--transition-speed);
+  }
+  
+  .image-footer:hover {
+    transform: scale(1.1);
+  }
+  
+  .icons-bg-color {
+    color: var(--text-light);
+    background-color: #202b36;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all var(--transition-speed);
+  }
+  
+  .icons-bg-color:hover {
+    color: white;
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+  }
+  
+  .para-fotter {
+    color: var(--text-light);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+  }
+  
+  .heading-footer {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .heading-footer:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 0;
+  }
+  
+  .icons-color {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .hr-line {
+    background-color: #2d3b48;
+    height: 1px;
+    border: none;
+    margin: 2rem 0;
+  }
+  
+  .footer-link {
+    color: var(--text-light);
+    transition: all var(--transition-speed);
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-link:hover {
+    color: white;
+    transform: translateX(5px);
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .vr-heading {
+      font-size: 2rem;
+    }
+    
+    .feature-heading, .products-heading, .trending-heading {
+      font-size: 2rem;
+    }
+    
+    .optical-heading {
+      font-size: 1.75rem;
+      margin-top: 1.5rem;
+    }
+    
+    .heading-footer {
+      margin-top: 2rem;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
